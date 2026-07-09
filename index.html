@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LS YMCA Thunder Log</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛈️</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <header>
+      <h1>⛈️ Thunder Log</h1>
+      <p class="subtitle">LS YMCA &middot; <span id="location">Lampeter</span></p>
+    </header>
+
+    <section id="status" class="status status--quiet">
+      <span class="status__icon" id="status-icon">🔇</span>
+      <span class="status__text" id="status-text">Loading…</span>
+    </section>
+
+    <section class="log">
+      <h2>Today's thunder <span class="date" id="date"></span></h2>
+      <ul id="entries" class="entries"></ul>
+      <p id="empty" class="empty" hidden>No thunder heard yet today. All quiet. ☀️</p>
+    </section>
+
+    <footer>
+      <p class="hint">
+        This log lists every stretch of time when thunder would have been
+        audible in Lampeter (a storm within about 10&nbsp;miles). It refreshes
+        automatically and starts fresh each day.
+      </p>
+      <p class="updated">Last checked: <span id="updated">—</span></p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
